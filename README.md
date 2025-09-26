@@ -44,13 +44,19 @@ First, a local project environment needs to be created, then the project's modul
    git add .
    git commit -m "Added My New Feature"
 
-   # Push the changes to your branch
+   # Push the changes to your branch (first push)
+   git push --set-upstream origin my-new-feature
+
+   # All future pushes
    git push
 
    # Create a pull request using the provided link after pushing
+   remote: 
+   remote: Create a pull request for 'my-new-feature' on GitHub by visiting:
+   remote:      https://github.com/bellanov/pythonic-programming/pull/new/my-new-feature
 
    # Tag the changes, if relevant
-   git tag -a "Version 0.1.0"
+   git tag -a "0.1.0" -m "Version 0.1.0"
 
    # Push the tags
    git push --follow-tags
